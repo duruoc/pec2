@@ -1,0 +1,655 @@
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama> <http://purl.org/dc/elements/1.1/creator> "Alejandro Ureña"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama> <http://purl.org/dc/elements/1.1/rights> "https://www.gnu.org/licenses/gpl-3.0.en.html"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama> <http://purl.org/dc/elements/1.1/title> "Futurama"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the planet in which a character was born or created"@en .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.w3.org/2000/01/rdf-schema#label> "has birth planet"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Character born or created in a Planet"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.w3.org/2000/01/rdf-schema#label> "has citizen"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "Someone who participated in the creation of an episode" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Character which belongs to an Organization" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has member" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "native species of a planet" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "has native species" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.w3.org/2000/01/rdf-schema#comment> "originary planet of a species" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.w3.org/2000/01/rdf-schema#label> "has originary planet" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#comment> "Specimen or member of a species" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#label> "has specimen" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "the character interpreted by an actor" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "interprets character" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Episodes in which someone is co-creator" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#label> "is creator of" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "the species a character belongs to" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "is from species" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor which gives voice to a character" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is interpreted by" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An Organization in which the Character participates" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "is member of" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters of the same species" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan> <http://www.w3.org/2000/01/rdf-schema#label> "same species than" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters participating in some common organization" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> <http://www.w3.org/2000/01/rdf-schema#label> "shares organization with" .
+# 
+# http://www.w3.org/2002/07/owl#differentFrom
+<http://www.w3.org/2002/07/owl#differentFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the character is its head in a jar, false if the character has its body"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> <http://www.w3.org/2000/01/rdf-schema#label> "is Head" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the name of an individual from any entity"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the skin of a character" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> <http://www.w3.org/2000/01/rdf-schema#label> "skin" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Actor" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> <http://www.w3.org/2000/01/rdf-schema#comment> "Extraterrestrial species" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> <http://www.w3.org/2000/01/rdf-schema#label> "Alien" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a character of the show"@en .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Film_director" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode of the show" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Female character of the show" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Female character" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization which members are all female characters" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Female organization" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "Human species" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization which members are all human characters" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Human organization" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Male character of the show" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Male character" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant> <http://www.w3.org/2000/01/rdf-schema#comment> "Members of the human species with genetic mutations" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant> <http://www.w3.org/2000/01/rdf-schema#label> "Mutant" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of associated characters such as companies, NGO's etc." .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Person function" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/PersonFunction" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a planet that appears in the show"@en .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> <http://www.w3.org/2000/01/rdf-schema#label> "Planet"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer> <http://www.w3.org/2000/01/rdf-schema#label> "Producer" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Film_producer" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> <http://www.w3.org/2000/01/rdf-schema#comment> "Robots and sentient artificial life forms" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> <http://www.w3.org/2000/01/rdf-schema#label> "Robot" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization which members are all robot characters" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Robot organization" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> <http://www.w3.org/2000/01/rdf-schema#comment> "The species a character belongs to" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer> <http://www.w3.org/2000/01/rdf-schema#label> "Writer" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Writer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Billy West" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_JohnDiMaggio
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_JohnDiMaggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_JohnDiMaggio> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_JohnDiMaggio> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "John DiMaggio" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Katey Sagal" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Lauren Tom" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Amy Wong-Kroker" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Bender Bending Rodríguez" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Philip J. Fry" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Turanga Leela" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "John A. Zoidberg" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Matt Groening" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Film_director" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "1x01 Space Pilot 3000" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "1x02 The Series Has Landed" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Eco-Feminists" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization which members are all human characters" .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Human organization" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Robot Mafia" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Decapod_10
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Decapod_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Decapod_10> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Earth" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Mars" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> "Decapodian" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human_Mutant
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human_Mutant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human_Mutant> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human_Mutant> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Robot
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Robot> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer_DavidX.Cohen
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer_DavidX.Cohen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer_DavidX.Cohen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer> .
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer_DavidX.Cohen> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid12 <http://www.w3.org/2002/07/owl#members> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid19 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid23 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid31 <http://www.w3.org/2003/11/swrl#body> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/2003/11/swrl#head> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> "Metal" .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid40 <http://www.w3.org/2003/11/swrl#body> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#arguments> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Earth" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#notEqual> .
+<http://www.w3.org/2003/11/swrlb#notEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid46 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/2003/11/swrl#head> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien> .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid50 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid51 <http://www.w3.org/2003/11/swrl#body> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#o> .
+_:genid53 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#o> .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c2> .
+_:genid55 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c2> .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#o> .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> .
+_:genid59 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/2003/11/swrl#head> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c2> .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> .
+_:genid61 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
