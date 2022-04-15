@@ -1,0 +1,675 @@
+@prefix : <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#> .
+
+<http://www.semanticweb.org/alex/ontologies/2022/3/Futurama> rdf:type owl:Ontology ;
+                                                              <http://purl.org/dc/elements/1.1/creator> "Alejandro Ureña"^^rdfs:Literal ;
+                                                              <http://purl.org/dc/elements/1.1/rights> "https://www.gnu.org/licenses/gpl-3.0.en.html"^^rdfs:Literal ;
+                                                              <http://purl.org/dc/elements/1.1/title> "Futurama"^^rdfs:Literal .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasBirthPlanet
+:hasBirthPlanet rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasCitizen ;
+                rdfs:domain :Character ;
+                rdfs:range :Planet ;
+                rdfs:comment "Represents the planet in which a character was born or created"@en ;
+                rdfs:label "has birth planet"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCitizen
+:hasCitizen rdf:type owl:ObjectProperty ;
+            rdfs:domain :Planet ;
+            rdfs:range :Character ;
+            rdfs:comment "Represents a Character born or created in a Planet"^^rdfs:Literal ;
+            rdfs:label "has citizen"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isCreatorOf ;
+            rdfs:domain :Episode ;
+            rdfs:range :PersonFunction ;
+            rdfs:comment "Someone who participated in the creation of an episode" ;
+            rdfs:label "has creator" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMemberOf ;
+           rdfs:domain :Organization ;
+           rdfs:range :Character ;
+           rdfs:comment "Represents a Character which belongs to an Organization" ;
+           rdfs:label "has member" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasNativeSpecies
+:hasNativeSpecies rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :hasOriginaryPlanet ;
+                  rdfs:domain :Planet ;
+                  rdfs:range :Species ;
+                  rdfs:comment "native species of a planet" ;
+                  rdfs:label "has native species" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasOriginaryPlanet
+:hasOriginaryPlanet rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Species ;
+                    rdfs:range :Planet ;
+                    rdfs:comment "originary planet of a species" ;
+                    rdfs:label "has originary planet" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#hasSpecimen
+:hasSpecimen rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isFromSpecies ;
+             rdfs:domain :Species ;
+             rdfs:range :Character ;
+             rdfs:comment "Specimen or member of a species" ;
+             rdfs:label "has specimen" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#interpretsCharacter
+:interpretsCharacter rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isInterpretedBy ;
+                     rdfs:domain :Actor ;
+                     rdfs:range :Character ;
+                     rdfs:comment "the character interpreted by an actor" ;
+                     rdfs:label "interprets character" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isCreatorOf
+:isCreatorOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :PersonFunction ;
+             rdfs:range :Episode ;
+             rdfs:comment "Episodes in which someone is co-creator" ;
+             rdfs:label "is creator of" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isFromSpecies
+:isFromSpecies rdf:type owl:ObjectProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Species ;
+               rdfs:comment "the species a character belongs to" ;
+               rdfs:label "is from species" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isInterpretedBy
+:isInterpretedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Character ;
+                 rdfs:range :Actor ;
+                 rdfs:comment "Actor which gives voice to a character" ;
+                 rdfs:label "is interpreted by" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Organization ;
+            rdfs:comment "An Organization in which the Character participates" ;
+            rdfs:label "is member of" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sameSpeciesThan
+:sameSpeciesThan rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty ;
+                 rdfs:domain :Character ;
+                 rdfs:range :Character ;
+                 rdfs:comment "Characters of the same species" ;
+                 rdfs:label "same species than" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#sharesOrganizationWith
+:sharesOrganizationWith rdf:type owl:ObjectProperty ,
+                                 owl:SymmetricProperty ;
+                        rdfs:domain :Character ;
+                        rdfs:range :Character ;
+                        rdfs:comment "Characters participating in some common organization" ;
+                        rdfs:label "shares organization with" .
+
+
+###  http://www.w3.org/2002/07/owl#differentFrom
+owl:differentFrom rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#isHead
+:isHead rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Character ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "True if the character is its head in a jar, false if the character has its body"^^rdfs:Literal ;
+        rdfs:label "is Head" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Represents the name of an individual from any entity"^^rdfs:Literal ;
+      rdfs:label "name"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin
+:skin rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Character ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Information about the skin of a character" ;
+      rdfs:label "skin" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :PersonFunction ;
+       rdfs:label "Actor" ;
+       rdfs:sameAs "https://dbpedia.org/page/Actor" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Alien
+:Alien rdf:type owl:Class ;
+       rdfs:subClassOf :Species ;
+       rdfs:comment "Extraterrestrial species" ;
+       rdfs:label "Alien" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasBirthPlanet ;
+                             owl:allValuesFrom :Planet
+                           ] ;
+           rdfs:comment "Represents a character of the show"@en ;
+           rdfs:label "Character"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :PersonFunction ;
+          rdfs:label "Director" ;
+          rdfs:sameAs "https://dbpedia.org/page/Film_director" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "Episode of the show" ;
+         rdfs:label "Episode" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleCharacter
+:FemaleCharacter rdf:type owl:Class ;
+                 rdfs:subClassOf :Character ;
+                 owl:disjointWith :MaleCharacter ;
+                 rdfs:comment "Female character of the show" ;
+                 rdfs:label "Female character" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#FemaleOrganization
+:FemaleOrganization rdf:type owl:Class ;
+                    rdfs:subClassOf :Organization ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasMember ;
+                                      owl:allValuesFrom :FemaleCharacter
+                                    ] ;
+                    rdfs:comment "Organization which members are all female characters" ;
+                    rdfs:label "Female organization" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Species ;
+       rdfs:comment "Human species" ;
+       rdfs:label "Human" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#HumanOrganization
+:HumanOrganization rdf:type owl:Class ;
+                   rdfs:subClassOf :Organization ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasMember ;
+                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :isFromSpecies ;
+                                                         owl:allValuesFrom :Human
+                                                       ]
+                                   ] ;
+                   rdfs:comment "Organization which members are all human characters" ;
+                   rdfs:label "Human organization" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#MaleCharacter
+:MaleCharacter rdf:type owl:Class ;
+               rdfs:subClassOf :Character ;
+               rdfs:comment "Male character of the show" ;
+               rdfs:label "Male character" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Mutant
+:Mutant rdf:type owl:Class ;
+        rdfs:subClassOf :Human ;
+        rdfs:comment "Members of the human species with genetic mutations" ;
+        rdfs:label "Mutant" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMember ;
+                                owl:allValuesFrom :Character
+                              ] ;
+              rdfs:comment "Group of associated characters such as companies, NGO's etc." ;
+              rdfs:label "Organization" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#PersonFunction
+:PersonFunction rdf:type owl:Class ;
+                rdfs:label "Person function" ;
+                rdfs:sameAs "https://dbpedia.org/ontology/PersonFunction" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet
+:Planet rdf:type owl:Class ;
+        rdfs:comment "Represents a planet that appears in the show"@en ;
+        rdfs:label "Planet"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :PersonFunction ;
+          rdfs:label "Producer" ;
+          rdfs:sameAs "https://dbpedia.org/page/Film_producer" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Robot
+:Robot rdf:type owl:Class ;
+       rdfs:subClassOf :Species ;
+       rdfs:comment "Robots and sentient artificial life forms" ;
+       rdfs:label "Robot" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#RobotOrganization
+:RobotOrganization rdf:type owl:Class ;
+                   rdfs:subClassOf :Organization ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasMember ;
+                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :isFromSpecies ;
+                                                         owl:allValuesFrom :Robot
+                                                       ]
+                                   ] ;
+                   rdfs:comment "Organization which members are all robot characters" ;
+                   rdfs:label "Robot organization" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species
+:Species rdf:type owl:Class ;
+         rdfs:comment "The species a character belongs to" ;
+         rdfs:label "Species" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :PersonFunction ;
+        rdfs:label "Writer" ;
+        rdfs:sameAs "https://dbpedia.org/page/Writer" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_BillyWest
+:Actor_BillyWest rdf:type owl:NamedIndividual ;
+                 :interpretsCharacter :Character_Zoidberg ;
+                 :name "Billy West" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_JohnDiMaggio
+:Actor_JohnDiMaggio rdf:type owl:NamedIndividual ;
+                    :interpretsCharacter :Character_Bender ;
+                    :name "John DiMaggio" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_KateySagal
+:Actor_KateySagal rdf:type owl:NamedIndividual ;
+                  :interpretsCharacter :Character_Leela ;
+                  :isCreatorOf :Episode_1x01 ;
+                  :name "Katey Sagal" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Actor_LaurenTom
+:Actor_LaurenTom rdf:type owl:NamedIndividual ;
+                 :interpretsCharacter :Character_Fry ,
+                                      :Character_Zoidberg ;
+                 :isCreatorOf :Episode_1x01 ,
+                              :Episode_1x02 ;
+                 :name "Lauren Tom" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Amy
+:Character_Amy rdf:type owl:NamedIndividual ;
+               :hasBirthPlanet :Planet_Mars ;
+               :isFromSpecies :Species_Human ;
+               :isInterpretedBy :Actor_LaurenTom ;
+               :isMemberOf :Organization_FemaleOrganization ,
+                           :Organization_HumanOrganization ;
+               :name "Amy Wong-Kroker" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Bender
+:Character_Bender rdf:type owl:NamedIndividual ;
+                  :hasBirthPlanet :Planet_Earth ;
+                  :isMemberOf :Organization_RobotOrganization ;
+                  :name "Bender Bending Rodríguez" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Fry
+:Character_Fry rdf:type owl:NamedIndividual ,
+                        :MaleCharacter ;
+               :hasBirthPlanet :Planet_Earth ;
+               :isInterpretedBy :Actor_BillyWest ;
+               :name "Philip J. Fry" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Leela
+:Character_Leela rdf:type owl:NamedIndividual ,
+                          :FemaleCharacter ;
+                 :hasBirthPlanet :Planet_Earth ;
+                 :isMemberOf :Organization_HumanOrganization ;
+                 :isHead "true"^^xsd:boolean ;
+                 :name "Turanga Leela" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character_Zoidberg
+:Character_Zoidberg rdf:type owl:NamedIndividual ;
+                    :isFromSpecies :Species_Alien ;
+                    :name "John A. Zoidberg" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Director_MattGroening
+:Director_MattGroening rdf:type owl:NamedIndividual ,
+                                :Director ;
+                       :isCreatorOf :Episode_1x01 ;
+                       :name "Matt Groening" ;
+                       rdfs:label "Director" ;
+                       rdfs:sameAs "https://dbpedia.org/page/Film_director" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x01
+:Episode_1x01 rdf:type owl:NamedIndividual ;
+              :hasCreator :Actor_BillyWest ;
+              :name "1x01 Space Pilot 3000" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Episode_1x02
+:Episode_1x02 rdf:type owl:NamedIndividual ;
+              :hasCreator :Director_MattGroening ;
+              :name "1x02 The Series Has Landed" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_FemaleOrganization
+:Organization_FemaleOrganization rdf:type owl:NamedIndividual ,
+                                          :FemaleOrganization ;
+                                 :hasMember :Character_Leela ;
+                                 :name "Eco-Feminists" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_HumanOrganization
+:Organization_HumanOrganization rdf:type owl:NamedIndividual ,
+                                         :HumanOrganization ;
+                                :hasMember :Character_Fry ;
+                                rdfs:comment "Organization which members are all human characters" ;
+                                rdfs:label "Human organization" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Organization_RobotOrganization
+:Organization_RobotOrganization rdf:type owl:NamedIndividual ,
+                                         :RobotOrganization ;
+                                :name "Robot Mafia" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Decapod_10
+:Planet_Decapod_10 rdf:type owl:NamedIndividual ;
+                   :hasCitizen :Character_Zoidberg .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Earth
+:Planet_Earth rdf:type owl:NamedIndividual ,
+                       :Planet ;
+              :name "Earth" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Planet_Mars
+:Planet_Mars rdf:type owl:NamedIndividual ,
+                      :Planet ;
+             :name "Mars" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Alien
+:Species_Alien rdf:type owl:NamedIndividual ,
+                        :Alien ;
+               :name "Decapodian" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human
+:Species_Human rdf:type owl:NamedIndividual ,
+                        :Human ;
+               :hasSpecimen :Character_Fry .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Human_Mutant
+:Species_Human_Mutant rdf:type owl:NamedIndividual ;
+                      :hasOriginaryPlanet :Planet_Earth ;
+                      :hasSpecimen :Character_Leela .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Species_Robot
+:Species_Robot rdf:type owl:NamedIndividual ;
+               :hasSpecimen :Character_Bender .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Writer_DavidX.Cohen
+:Writer_DavidX.Cohen rdf:type owl:NamedIndividual ,
+                              :Writer ;
+                     :isCreatorOf :Episode_1x01 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Alien
+                :Human
+                :Robot
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Character
+                :Episode
+                :Organization
+                :PersonFunction
+                :Planet
+                :Species
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FemaleOrganization
+                :HumanOrganization
+                :RobotOrganization
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Actor_KateySagal
+                        :Actor_LaurenTom
+                        :Character_Amy
+                        :Character_Fry
+                        :Character_Leela
+                        :Planet_Earth
+                        :Planet_Mars
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#n> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c1> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#o> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c2> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isFromSpecies ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Robot ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :skin ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Metal"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Planet ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :name ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#notEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#n> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "Earth" ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasNativeSpecies ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Species_Alien
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isMemberOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#o>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c2>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isMemberOf ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c2> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#o>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Organization ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#o>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sharesOrganizationWith ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c1> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c2>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
