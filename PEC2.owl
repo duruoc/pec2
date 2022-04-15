@@ -263,7 +263,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#skin">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2022/3/Futurama#Character"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>Information about the sin of a character</rdfs:comment>
+        <rdfs:comment>Information about the skin of a character</rdfs:comment>
         <rdfs:label>skin</rdfs:label>
     </owl:DatatypeProperty>
     
